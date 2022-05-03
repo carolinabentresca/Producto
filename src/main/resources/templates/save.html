@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Save</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>   
+    </head>
+    <body>
+        <nav class="navbar navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">
+                <img th:src="@{'/img/log.png'}" width="55" height="55" class="d-inline-block align-top" style="font-family: cursive" alt="" loading="lazy">
+            </a>
+        </nav>
+        <div class="container mt-4 col-lg-6">
+            <div class="card border-dark"> 
+                <div class="card-body bg-dark text-white">
+                    <form action="#" th:action="@{/save}" th:object="${producto}" method="post" enctype="multipart/form-data">        
+                        <label for="marca"  style="font-family: cursive">Marca</label>
+                        <input type="text" class="form-control" id="marca" th:field="*{marca}" name="marca">
+                        <label for="nombre"  style="font-family: cursive">Producto</label>
+                        <input type="text" class="form-control" id="nombre" th:field="*{nombre}" name="nombre">                  
+                        <label for="precio"  style="font-family: cursive">Precio</label>
+                        <input type="text" class="form-control" id="precio" th:field="*{precio}" name="precio">
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="stock"  style="font-family: cursive">Stock</label>
+                                <input type="text" class="form-control" id="stock" th:field="*{stock}" name="stock">
+                            </div> 
+                            <div class="form-group col-md-6">
+                                <label for="vendido"  style="font-family: cursive">Vendidos</label>
+                                <input type="text" class="form-control" id="vendido" th:field="*{vendido}" name="vendido">                           
+                            </div>
+                        </div>   
+                        <label for="imagen"  style="font-family: cursive">Imagen</label>
+                        <input type="file" class="form-control" id="imagen" name="file">                          
+                        <br/> 
+                        <button type="submit" class="btn btn-outline-success" style="font-family: cursive">Save</button>
+                    </form> 
+                </div>
+            </div>     
+        </div>
+    </body>
+</html>

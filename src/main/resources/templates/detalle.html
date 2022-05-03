@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Detalles</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">
+                <img th:src="@{'/img/log.png'}" width="55" height="55" class="d-inline-block align-top" style="font-family: cursive" alt="" loading="lazy">               
+            </a>
+        </nav>
+         <br/> <br/>
+        <div class="container mt-7 col-lg-7">
+            <div class="card border-dark">
+                <div class="card-body bg-dark ">
+                    <img th:src="@{'/img/' + ${producto.imagen}}" th:alt="${producto.imagen}" class="img-thumbrail rounded float-left" alt="..." style="max-width: 25%">
+                  
+                    <ul class="list-group list-group-flush rounded">
+                        <li class="list-group-item card-body bg-dark text-white" style="font-family: cursive">DETALLES PRODUCTO</li>
+                        <li class="list-group-item card-body bg-dark text-white" th:text="'Marca del Producto:  ' + ${producto.marca}" style="font-family: cursive"></li>
+                        <li class="list-group-item card-body bg-dark text-white" th:text="'Tipo de Producto:  ' + ${producto.nombre}" style="font-family: cursive"></li>
+                        <li class="list-group-item card-body bg-dark text-white" th:text="'Precio de Venta:  ' + ${producto.precio}" style="font-family: cursive" ></li>
+                        <li class="list-group-item card-body bg-dark text-white" th:text="'Stock del Producto:  ' + ${producto.stock}" style="font-family: cursive"></li>
+                        <li class="list-group-item card-body bg-dark text-white" th:text="'Productos Vendidos:  ' + ${producto.vendido}" style="font-family: cursive"></li>
+                    </ul>
+                </div>   
+            </div>
+        </div>
+    </body>
+</html>
