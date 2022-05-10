@@ -4,22 +4,22 @@
 ### Thymeleaf - Bootstrap v4.5
 
 ##
-## "Stock Productos"
+### "Stock Productos"
 
 ![Productos - Google Chrome 2_5_2022 21_50_12](https://user-images.githubusercontent.com/88462536/166392517-afa55751-9038-4b94-81e8-5112ec79985a.png)
 
 ##
-## "Insertamos nuevo Producto"
+### "Insertamos nuevo Producto"
 
 ![Productos - Google Chrome 2_5_2022 21_50_31](https://user-images.githubusercontent.com/88462536/166392533-c775d90d-92bf-4ef0-aa5a-55e56f875035.png)
 
 ##
-## "Mostramos lista de Productos"
+### "Mostramos lista de Productos"
 
 ![Productos - Google Chrome 2_5_2022 21_52_19](https://user-images.githubusercontent.com/88462536/166392561-2f4e4305-143e-48aa-96ce-4cb58332979e.png)
 
 ##
-## "Mostramos detalles del Producto, según su ID"
+### "Mostramos detalles del Producto, según su ID"
 
 ![Productos - Google Chrome 2_5_2022 21_52_34](https://user-images.githubusercontent.com/88462536/166392571-1f81e84e-9831-470b-b575-dde9e2d003de.png)
 
