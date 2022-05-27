@@ -2,7 +2,7 @@
 ### Proyecto Spring Boot - CRUD
 - #### Uso SpringMVC - Spring Data Jpa e Hibernate
 - #### Uso Thymeleaf - Bootstrap v4.5
-- #### "Stock Productos"
+- #### "Stock de Productos"
 
 ![Productos - Google Chrome 2_5_2022 21_50_12](https://user-images.githubusercontent.com/88462536/166392517-afa55751-9038-4b94-81e8-5112ec79985a.png)
 
