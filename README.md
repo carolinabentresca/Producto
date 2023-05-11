@@ -1,5 +1,5 @@
 
-### Proyecto Java Spring Boot - CRUD
+### Proyecto JAVA Spring Boot - CRUD
 - #### Uso SpringMVC - Spring Data Jpa e Hibernate
 - #### Uso Thymeleaf - Bootstrap v4.5
 - #### "Stock de Productos"
